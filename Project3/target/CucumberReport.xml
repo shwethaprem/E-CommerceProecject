@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="144.849" tests="12" skipped="0" failures="0" errors="0">
+<testcase classname="Checkout functionality" name="Search the product and add to cart and checkout" time="42.925">
+<system-out><![CDATA[
+Given Open the Application..................................................passed
+When Enter valid product "HP" into search field.............................passed
+And Click on Search button..................................................passed
+When Click on the Add to cart button........................................passed
+When Click on the Add to cart button on specification page..................passed
+When Click on the Checkout link.............................................passed
+When User select on Guest Checkout in Step1:Checkout Options................passed
+And Click on continue button................................................passed
+And Step2:Billing details section pop ups and User enters below details into the fields.passed
+And Select on checkbox and click on continue button.........................passed
+And Step4:Delivery Method section pop ups and Click on continue button......passed
+And Step5: Payment Method section pop ups and Click on Terms and Condition Checkbox.passed
+And Click on payment method continue button.................................passed
+And Step6:Confirm Order section pop ups and Click on confirm order button...passed
+Then Successfull message should be displayed................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with valid credential - Example #1.1" time="8.97">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the valid email address shwethapatil106@gmail.com..........passed
+And Enter the valid password Shwetha@123....................................passed
+And Clicks on Login button..................................................passed
+Then User should logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with valid credential - Example #1.2" time="8.662">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the valid email address vprem4u@gmail.com..................passed
+And Enter the valid password 12345..........................................passed
+And Clicks on Login button..................................................passed
+Then User should logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with valid credential - Example #1.3" time="8.894">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the valid email address shwethasini.htcorps111@gmail.com...passed
+And Enter the valid password 45678..........................................passed
+And Clicks on Login button..................................................passed
+Then User should logged in successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with invalid credential" time="8.228">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the invalid email address..................................passed
+And Enter invalid password "546789".........................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with valid email address and invalid password" time="8.487">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the valid email address "shwethasini.htcorps111@gmail.com".passed
+And Enter invalid password "546729".........................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login with invalid email address and valid password" time="13.277">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User enters the invalid email address..................................passed
+And Enter the valid password "Shwetha@123"..................................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Login without providing any credentials" time="8.055">
+<system-out><![CDATA[
+Given User navigates to Login page..........................................passed
+When User dont enter email address into email field.........................passed
+And User dont enter password into password field............................passed
+And Clicks on Login button..................................................passed
+Then User should get a proper warning message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Register with mandatory fields" time="9.72">
+<system-out><![CDATA[
+Given User navigate to Register Account page................................passed
+When User enters below details into the fields..............................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Register with all fields" time="9.85">
+<system-out><![CDATA[
+Given User navigate to Register Account page................................passed
+When User enters below details into the fields..............................passed
+And Selects Yes for Newsletter..............................................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Account should get successfully created................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Register without providing any fields" time="7.684">
+<system-out><![CDATA[
+Given User navigate to Register Account page................................passed
+When User dont enter details into any fields................................passed
+And Clicks on Continue button...............................................passed
+Then Warning message should be displayed for all the mandatory fields.......passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Register with duplicate email address" time="9.205">
+<system-out><![CDATA[
+Given User navigate to Register Account page................................passed
+When User enters below details into the fields with duplicate email.........passed
+And Selects Yes for Newsletter..............................................passed
+And Selects Privacy Policy field............................................passed
+And Clicks on Continue button...............................................passed
+Then Warning message informating the user about duplicate email should be displayed.passed
+]]></system-out>
+</testcase>
+</testsuite>
